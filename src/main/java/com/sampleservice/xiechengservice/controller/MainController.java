@@ -23,7 +23,7 @@ public class MainController extends MObject {
         result.set("msg", "/hotel");
 
         if (requestData.get("interval") != null) {
-            MBaseUtils.generateStringInKBSize(500, result, (long) requestData.get("interval"));
+            MBaseUtils.generateStringInKBSize(500, result, (int) requestData.get("interval"));
         }
         return result;
     }
